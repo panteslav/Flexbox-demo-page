@@ -1,0 +1,12 @@
+.search-form__input {
+  background-image: none;
+  padding-left: 0;
+}
+
+.search-form__input:placeholder-shown {
+  background-image: url(../../Assets/search-icon.svg);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+/*# sourceMappingURL=search-form.css.map */

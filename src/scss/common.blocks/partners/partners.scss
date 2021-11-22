@@ -1,0 +1,16 @@
+.partners {
+    &__title {
+        font-size: 2em;
+    }
+    &__cards-container {
+        // width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        gap: 20px;
+
+        @media (min-width: 768px) {
+            // justify-content: space-between;
+        }
+    }
+}

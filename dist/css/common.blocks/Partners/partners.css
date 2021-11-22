@@ -1,0 +1,11 @@
+.partners__title {
+  font-size: 2em;
+}
+.partners__cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=partners.css.map */
