@@ -1,21 +1,25 @@
 .card {
-  min-width: 335px;
   width: 100%;
+  min-width: 335px;
   height: 140px;
-  border: 1px solid #ebebf1;
-  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
   cursor: pointer;
 }
 @media (min-width: 768px) {
   .card {
-    min-width: 229px;
-    max-width: 270px;
+    min-width: 230px;
+    max-width: 30%;
     height: 120px;
-    width: 229px;
     background-color: white;
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    max-width: 270px;
   }
 }
 
@@ -25,9 +29,20 @@
 .partners__cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: stretch;
-  gap: 20px;
+  row-gap: 20px;
 }
+@media (min-width: 768px) {
+  .partners__cards-container {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .partners__cards-container {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
 .search-form__input {
   background-image: none;
   padding-left: 0;

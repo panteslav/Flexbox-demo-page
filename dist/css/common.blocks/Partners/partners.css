@@ -4,8 +4,18 @@
 .partners__cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: stretch;
-  gap: 20px;
+  row-gap: 20px;
+}
+@media (min-width: 768px) {
+  .partners__cards-container {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .partners__cards-container {
+    justify-content: flex-start;
+    gap: 30px;
+  }
 }
 
 /*# sourceMappingURL=partners.css.map */
