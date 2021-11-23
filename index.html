@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,80 +8,59 @@
         <link rel="stylesheet" href="./dist/css/main.css" />
     </head>
     <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__logo logo">
-                    <img class="logo__img" src="./Assets/main-logo.svg" alt="Main logo" />
+        <header class="header">
+            <div class="header__logo logo">
+                <img class="logo__img" src="./Assets/main-logo.svg" alt="Main logo" />
+            </div>
+            <div class="header__search-form search-form">
+                <div class="search-form__input-container">
+                    <input class="search-form__input" type="text" placeholder="Найти..." />
                 </div>
-                <div class="header__search-form search-form">
-                    <div class="search-form__input-container">
-                        <input class="search-form__input" type="text" placeholder="Найти..." />
-                    </div>
+            </div>
+            <div class="header__profile profile">
+                <div class="profile__icon">
+                    <img src="./Assets/user-menu-icon.svg" alt="User icon" />
                 </div>
-                <div class="header__profile profile">
+                <div class="profile__extended">
                     <div class="profile__name">Константин</div>
                     <div class="profile__avatar">
                         <img class="avatar" src="./Assets/avavtar.png" alt="Profile avatar" />
                     </div>
                 </div>
-            </header>
-            <main>
-                <section class="partners">
-                    <h1 class="partners__title title">Наши партнеры</h1>
-                    <ul class="partners__cards-container cards-container">
-                        <li class="card">
-                            <img
-                                class="card_logo logo"
-                                src="./Assets/tokens/mxm.svg"
-                                alt="mxm logo"
-                            />
-                        </li>
-                        <li class="card">
-                            <img
-                                class="card_logo logo"
-                                src="./Assets/tokens/upp.svg"
-                                alt="upp logo"
-                            />
-                        </li>
-                        <li class="card">
-                            <img
-                                class="card_logo logo"
-                                src="./Assets/tokens/spdr.svg"
-                                alt="spdr logo"
-                            />
-                        </li>
-                        <li class="card">
-                            <img
-                                class="card_logo logo"
-                                src="./Assets/tokens/ftt.svg"
-                                alt="ftt logo"
-                            />
-                        </li>
-                        <li class="card">
-                            <img
-                                class="card_logo logo"
-                                src="./Assets/tokens/zeb.svg"
-                                alt="mxm zeb"
-                            />
-                        </li>
-                        <li class="card">
-                            <img
-                                class="card_logo logo"
-                                src="./Assets/tokens/ode.svg"
-                                alt="ode logo"
-                            />
-                        </li>
-                        <li class="card">
-                            <img
-                                class="card_logo logo"
-                                src="./Assets/tokens/mwc.svg"
-                                alt="mwc logo"
-                            />
-                        </li>
-                    </ul>
-                </section>
-            </main>
-            <footer></footer>
-        </div>
+            </div>
+        </header>
+        <main class="wrapper">
+            <section class="partners">
+                <h1 class="partners__title title">Наши партнеры</h1>
+                <ul class="partners__cards-container cards-container">
+                    <li class="card">
+                        <img class="card_logo logo" src="./Assets/tokens/mxm.svg" alt="mxm logo" />
+                    </li>
+                    <li class="card">
+                        <img class="card_logo logo" src="./Assets/tokens/upp.svg" alt="upp logo" />
+                    </li>
+                    <li class="card">
+                        <img
+                            class="card_logo logo"
+                            src="./Assets/tokens/spdr.svg"
+                            alt="spdr logo"
+                        />
+                    </li>
+                    <li class="card">
+                        <img class="card_logo logo" src="./Assets/tokens/ftt.svg" alt="ftt logo" />
+                    </li>
+                    <li class="card">
+                        <img class="card_logo logo" src="./Assets/tokens/zeb.svg" alt="mxm zeb" />
+                    </li>
+                    <li class="card">
+                        <img class="card_logo logo" src="./Assets/tokens/ode.svg" alt="ode logo" />
+                    </li>
+                    <li class="card">
+                        <img class="card_logo logo" src="./Assets/tokens/mwc.svg" alt="mwc logo" />
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer></footer>
     </body>
 </html>

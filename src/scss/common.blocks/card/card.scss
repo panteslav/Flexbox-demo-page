@@ -13,6 +13,10 @@
     border-radius: 5px;
     cursor: pointer;
 
+    &:hover {
+        box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+    }
+
     @media (min-width: a.$tablet) {
         min-width: 230px;
         max-width: 30%;

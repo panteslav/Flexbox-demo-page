@@ -1,9 +1,6 @@
 // Imports
-@use './abstracts/reset.scss';
-@use './common.blocks/card/card.scss';
-@use './common.blocks/partners/partners.scss';
-@use './common.blocks/search-form/search-form.scss';
 @use './abstracts/' as c;
+@use './common.blocks/' as b;
 
 /* Global styles */
 body {
@@ -11,13 +8,13 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.6;
-    // background-color: c.$main-bg;
-    background-color: red;
-    display: flex;
-    justify-content: center;
+    background-color: c.$main-bg;
+    // background-color: red;
 }
 
 .wrapper {
+    display: flex;
+    justify-content: center;
     min-width: 335px;
     max-width: 1170px;
     margin: 0 20px 73px 20px;
