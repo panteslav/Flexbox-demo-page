@@ -1,53 +1,9 @@
 // Imports
+@use './abstracts/reset.scss';
 @use './common.blocks/card/card.scss';
 @use './common.blocks/partners/partners.scss';
 @use './common.blocks/search-form/search-form.scss';
 @use './abstracts/' as c;
-
-/* Defaults reset */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
-
-ul[class],
-ol[class] {
-    padding: 0;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-    margin: 0;
-}
 
 /* Global styles */
 body {
@@ -65,7 +21,6 @@ body {
     min-width: 335px;
     max-width: 1170px;
     margin: 0 20px 73px 20px;
-    // margin-bottom: 73px;
 }
 
 // @media (min-width: 768px) {

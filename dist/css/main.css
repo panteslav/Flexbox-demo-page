@@ -1,60 +1,3 @@
-.card {
-  width: 100%;
-  min-width: 335px;
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ebebf1;
-  border-radius: 5px;
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  .card {
-    min-width: 230px;
-    max-width: 30%;
-    height: 120px;
-    background-color: white;
-  }
-}
-@media (min-width: 1440px) {
-  .card {
-    max-width: 270px;
-  }
-}
-
-.partners__title {
-  font-size: 2em;
-}
-.partners__cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 20px;
-}
-@media (min-width: 768px) {
-  .partners__cards-container {
-    justify-content: space-between;
-  }
-}
-@media (min-width: 1440px) {
-  .partners__cards-container {
-    justify-content: flex-start;
-    gap: 30px;
-  }
-}
-
-.search-form__input {
-  background-image: none;
-  padding-left: 0;
-}
-
-.search-form__input:placeholder-shown {
-  background-image: url(../../Assets/search-icon.svg);
-  background-repeat: no-repeat;
-  padding-left: 30px;
-}
-
-/* Defaults reset */
 *,
 *::before,
 *::after {
@@ -97,6 +40,63 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+.card {
+  width: 100%;
+  min-width: 335px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .card {
+    min-width: 230px;
+    max-width: 30%;
+    height: 120px;
+    background-color: white;
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    max-width: 270px;
+  }
+}
+
+.partners__title {
+  font-size: 2em;
+}
+.partners__cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin-top: 300px;
+}
+@media (min-width: 768px) {
+  .partners__cards-container {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .partners__cards-container {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
+.search-form__input {
+  background-image: none;
+  padding-left: 0;
+}
+
+.search-form__input:placeholder-shown {
+  background-image: url(../../Assets/search-icon.svg);
+  background-repeat: no-repeat;
+  padding-left: 30px;
 }
 
 /* Global styles */

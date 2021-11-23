@@ -7,7 +7,9 @@
     &__cards-container {
         display: flex;
         flex-wrap: wrap;
-        row-gap: 20px;
+        row-gap: a.$default-indent;
+
+        margin-top: 300px;
 
         @media (min-width: a.$tablet) {
             justify-content: space-between;
