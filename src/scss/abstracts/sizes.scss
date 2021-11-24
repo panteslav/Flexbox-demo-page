@@ -1,5 +1,9 @@
+//Media
 $mobile: 375px;
 $tablet: 768px;
 $desktop: 1440px;
 
+//Sizes
 $default-indent: 20px;
+$max-wrapper-width: 1170px;
+$min-wrapper-width: calc($mobile - $default-indent * 2);

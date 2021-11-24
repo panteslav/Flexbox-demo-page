@@ -1,6 +1,11 @@
 // Imports
-@use './abstracts/' as c;
+@use './abstracts/' as a;
 @use './common.blocks/' as b;
+// * {
+//     border: 1px solid red;
+// margin: 0px !important ;
+// padding: 0px !important ;
+// }
 
 /* Global styles */
 body {
@@ -8,16 +13,29 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.6;
-    background-color: c.$main-bg;
+    background-color: a.$main-bg;
     // background-color: red;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
 }
 
 .wrapper {
     display: flex;
     justify-content: center;
-    min-width: 335px;
-    max-width: 1170px;
+    min-width: a.$min-wrapper-width;
+    max-width: a.$max-wrapper-width;
+    margin: auto;
     margin: 0 20px 73px 20px;
+    // margin-top: 0px;
+    // margin-left: min(20px, 1000px);
+    // margin-right: min(20px, 1000px);
+    // margin-bottom: 73px;
+
+    @media (min-width: calc(a.$max-wrapper-width + a.$default-indent * 2)) {
+        margin: auto;
+    }
+    // margin: auto;
 }
 
 // @media (min-width: 768px) {

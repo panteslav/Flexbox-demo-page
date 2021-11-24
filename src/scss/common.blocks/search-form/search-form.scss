@@ -1,7 +1,6 @@
 @use '../../abstracts/index' as a;
 
 .search-form {
-    // align-self: stretch;
     max-width: 100%;
     margin-top: 16px;
 
@@ -18,10 +17,7 @@
         }
     }
     @media (min-width: a.$tablet) {
-        // width: auto;
         margin-top: 0px;
-        display: flex;
-        align-items: center;
         height: 40px;
     }
 }
@@ -37,12 +33,11 @@
     background-image: none;
 
     @media (min-width: a.$tablet) {
-        padding-top: 0px;
         padding: 12px 10px 12px 0px;
         margin-top: 0px;
         // margin: 12px 10px 12px 10px;
         min-width: 459px;
-        height: 40px;
+        max-height: 40px;
         border: 1px solid a.$main-light;
         border-radius: 5px;
     }
