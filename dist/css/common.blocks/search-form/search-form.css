@@ -45,6 +45,10 @@ dd {
 
 .search-form {
   max-width: 100%;
+  color: #bbc4d6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
   margin-top: 16px;
 }
 @media (max-width: 767px) {

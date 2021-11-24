@@ -60,6 +60,10 @@ dd {
   }
 }
 .profile__name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #768298;
   display: flex;
   align-items: center;
   padding-left: 19px;
@@ -67,6 +71,8 @@ dd {
 }
 .profile__avatar {
   margin-left: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 /*# sourceMappingURL=profile.css.map */

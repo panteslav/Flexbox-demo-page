@@ -1,6 +1,8 @@
 // Imports
 @use './abstracts/' as a;
 @use './common.blocks/' as b;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 // * {
 //     border: 1px solid red;
 // margin: 0px !important ;
@@ -14,6 +16,7 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.6;
     background-color: a.$main-bg;
+    font-family: a.$main-font-family;
     // background-color: red;
     // display: flex;
     // align-items: center;

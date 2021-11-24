@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.title {
+  color: #121920;
+  font-weight: 500;
+  line-height: 160%;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+@media (min-width: 1440px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+/*# sourceMappingURL=title.css.map */

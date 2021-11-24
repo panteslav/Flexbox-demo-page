@@ -45,6 +45,7 @@ dd {
 
 .partners__title {
   font-size: 2em;
+  margin-top: 70px;
 }
 .partners__cards-container {
   display: flex;

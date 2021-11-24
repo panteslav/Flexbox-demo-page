@@ -1,0 +1,14 @@
+@use '../../abstracts/index' as a;
+
+.title {
+    // font-family: 'Roboto';
+    color: a.$main-dark;
+    font-weight: a.$font-weight-bold;
+    line-height: 160%;
+    text-transform: uppercase;
+    font-size: a.$font-size-large;
+
+    @media (min-width: a.$desktop) {
+        font-size: a.$font-size-larger;
+    }
+}
