@@ -24,8 +24,6 @@ body {
 }
 
 .wrapper {
-    display: flex;
-    justify-content: center;
     min-width: a.$min-wrapper-width;
     max-width: a.$max-wrapper-width;
     margin: auto;
@@ -39,6 +37,11 @@ body {
         margin: auto;
     }
     // margin: auto;
+}
+
+.filler {
+    width: 100%;
+    height: 100%;
 }
 
 // @media (min-width: 768px) {

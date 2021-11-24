@@ -86,5 +86,9 @@ dd {
     gap: 40px;
   }
 }
+.header__logo {
+  max-width: 40px;
+  max-height: 40px;
+}
 
 /*# sourceMappingURL=header.css.map */
