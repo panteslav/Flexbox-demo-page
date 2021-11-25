@@ -1,7 +1,6 @@
 @use '../../abstracts/index' as a;
 
 .title {
-    // font-family: 'Roboto';
     color: a.$main-dark;
     font-weight: a.$font-weight-bold;
     line-height: 160%;

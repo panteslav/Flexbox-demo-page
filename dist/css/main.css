@@ -47,54 +47,53 @@ dd {
 .header {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
 }
-.header__logo {
-  order: 1;
-}
-.header__profile {
-  order: 2;
-}
-.header__search-form {
-  order: 3;
-}
 @media (min-width: 768px) {
   .header {
+    height: 80px;
     display: flex;
     justify-content: center;
   }
-  .header__profile {
-    order: 3;
-  }
-  .header__search-form {
-    order: 2;
-    flex-grow: 100;
-  }
-  .header:after {
-    content: "";
-    display: block;
-    position: relative;
-    right: 167px;
-    height: 80px;
-    width: 1px;
-    background: #ebebf1;
-  }
 }
 .header__wrapper {
-  padding: 20px 20px 0px 20px;
-  align-items: center;
+  padding: 20px 0px 0px 0px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.header__wrapper :nth-child(1) {
+  order: 1;
+}
+.header__wrapper :nth-child(2) {
+  order: 3;
+}
+.header__wrapper :nth-child(3) {
+  order: 2;
+}
 @media (min-width: 768px) {
   .header__wrapper {
+    padding: 0px;
     flex: 1;
     min-width: 728px;
     max-width: 1170px;
-    padding: 20px 0px;
     margin: 0px 20px;
     flex-wrap: nowrap;
     gap: 40px;
   }
+  .header__wrapper :nth-child(2) {
+    order: 2;
+    flex-grow: 2;
+  }
+  .header__wrapper :nth-child(3) {
+    order: 3;
+    border-left: 1px solid #ebebf1;
+  }
+}
+.header__flex-el {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
 }
 .header__logo {
   max-width: 40px;
@@ -102,6 +101,7 @@ dd {
 }
 .header__search-form {
   margin-top: 16px;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .header__search-form:before {
@@ -114,15 +114,25 @@ dd {
     background: #bbc4d6;
   }
 }
+@media (min-width: 768px) {
+  .header__search-form {
+    margin-top: 0px;
+    height: 40px;
+  }
+}
+.header__profile {
+  padding-left: 19px;
+}
+
 .partners__title {
-  font-size: 2em;
+  align-self: 28px;
   margin-top: 70px;
 }
 .partners__cards-container {
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 20px;
-  margin-top: 30px;
 }
 @media (min-width: 768px) {
   .partners__cards-container {
@@ -133,6 +143,22 @@ dd {
   .partners__cards-container {
     justify-content: flex-start;
     gap: 30px;
+  }
+}
+.partners__card {
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .partners__card {
+    min-width: 230px;
+    max-width: 30%;
+    height: 120px;
+  }
+}
+@media (min-width: 1440px) {
+  .partners__card {
+    max-width: 270px;
   }
 }
 
@@ -153,13 +179,16 @@ dd {
   }
 }
 .profile__name {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
   color: #768298;
-  display: flex;
-  align-items: center;
-  padding-left: 19px;
+}
+.profile__link {
+  text-decoration: none;
 }
 .profile__avatar {
   margin-left: 10px;
@@ -169,42 +198,37 @@ dd {
 
 .search-form {
   max-width: 100%;
+  line-height: 16px;
   color: #bbc4d6;
   font-size: 14px;
   font-weight: 400;
-  line-height: 16px;
 }
-@media (min-width: 768px) {
-  .search-form {
-    margin-top: 0px;
-    height: 40px;
-  }
-}
-
 .search-form__input {
-  font-size: 14px;
-  font-weight: 400;
   width: 100%;
   margin-top: 12px;
+  padding-left: 0px;
   text-indent: 29px;
+  font-size: 14px;
+  font-weight: 400;
   border: none;
-  background-image: none;
 }
 @media (min-width: 768px) {
   .search-form__input {
-    padding: 12px 10px 12px 0px;
+    padding: 12px 10px 12px 10px;
     margin-top: 0px;
-    min-width: 459px;
-    max-height: 40px;
     border: 1px solid #ebebf1;
     border-radius: 5px;
   }
 }
-
 .search-form__input:placeholder-shown {
   background-image: url(../../Assets/search-icon.svg);
   background-position: left center;
   background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .search-form__input:placeholder-shown {
+    background-position: 10px center;
+  }
 }
 
 .card {
@@ -214,8 +238,6 @@ dd {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ebebf1;
-  border-radius: 5px;
   cursor: pointer;
 }
 .card:hover {
@@ -233,7 +255,6 @@ dd {
     min-width: 230px;
     max-width: 30%;
     height: 120px;
-    background-color: white;
   }
 }
 @media (min-width: 1440px) {
@@ -272,18 +293,12 @@ body {
 .wrapper {
   min-width: 335px;
   max-width: 1170px;
-  margin: auto;
-  margin: 0 20px 73px 20px;
+  margin: 0px 20px;
 }
 @media (min-width: 1210px) {
   .wrapper {
-    margin: auto;
+    margin: 0px auto;
   }
-}
-
-.filler {
-  width: 100%;
-  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

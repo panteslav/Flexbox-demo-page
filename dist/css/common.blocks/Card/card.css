@@ -50,8 +50,6 @@ dd {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ebebf1;
-  border-radius: 5px;
   cursor: pointer;
 }
 .card:hover {
@@ -69,7 +67,6 @@ dd {
     min-width: 230px;
     max-width: 30%;
     height: 120px;
-    background-color: white;
   }
 }
 @media (min-width: 1440px) {

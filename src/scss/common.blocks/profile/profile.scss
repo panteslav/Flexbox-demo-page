@@ -8,6 +8,8 @@
     }
 
     &__extended {
+        // margin-left: 19px;
+
         display: none;
         height: 100%;
 
@@ -19,14 +21,18 @@
     }
 
     &__name {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+
         font-size: a.$font-size-regular;
         font-weight: a.$font-weight-regular;
         line-height: 120%;
         color: a.$main-light-darker;
-        display: flex;
-        align-items: center;
-        padding-left: 19px;
-        // border-left: 1px solid a.$main-light;
+    }
+
+    &__link {
+        text-decoration: none;
     }
 
     &__avatar {

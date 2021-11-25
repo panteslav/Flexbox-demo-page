@@ -60,13 +60,16 @@ dd {
   }
 }
 .profile__name {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
   color: #768298;
-  display: flex;
-  align-items: center;
-  padding-left: 19px;
+}
+.profile__link {
+  text-decoration: none;
 }
 .profile__avatar {
   margin-left: 10px;
