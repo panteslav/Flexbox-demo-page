@@ -44,7 +44,6 @@ dd {
 }
 
 .partners__title {
-  align-self: 28px;
   margin-top: 70px;
 }
 .partners__cards-container {
@@ -65,7 +64,9 @@ dd {
   }
 }
 .partners__card {
-  border: 1px solid #ebebf1;
+  min-width: 335px;
+  height: 140px;
+  border-width: 1px;
   border-radius: 5px;
 }
 @media (min-width: 768px) {

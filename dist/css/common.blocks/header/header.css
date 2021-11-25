@@ -60,9 +60,6 @@ dd {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.header__wrapper :nth-child(1) {
-  order: 1;
-}
 .header__wrapper :nth-child(2) {
   order: 3;
 }
@@ -101,6 +98,7 @@ dd {
 .header__search-form {
   margin-top: 16px;
   width: 100%;
+  border: none;
 }
 @media (max-width: 767px) {
   .header__search-form:before {

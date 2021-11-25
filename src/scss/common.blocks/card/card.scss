@@ -2,8 +2,8 @@
 
 .card {
     width: 100%;
-    min-width: 335px;
-    height: 140px;
+    border-style: solid;
+    border-color: a.$main-light;
 
     display: flex;
     align-items: center;

@@ -45,8 +45,8 @@ dd {
 
 .card {
   width: 100%;
-  min-width: 335px;
-  height: 140px;
+  border-style: solid;
+  border-color: #ebebf1;
   display: flex;
   align-items: center;
   justify-content: center;

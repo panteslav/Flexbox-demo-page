@@ -2,7 +2,6 @@
 
 .partners {
     &__title {
-        align-self: a.$font-size-large;
         margin-top: 70px;
     }
     &__cards-container {
@@ -21,7 +20,9 @@
     }
 
     &__card {
-        border: 1px solid a.$main-light;
+        min-width: 335px;
+        height: 140px;
+        border-width: 1px;
         border-radius: 5px;
         @media (min-width: a.$tablet) {
             min-width: 230px;

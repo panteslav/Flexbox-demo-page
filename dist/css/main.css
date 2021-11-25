@@ -61,9 +61,6 @@ dd {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.header__wrapper :nth-child(1) {
-  order: 1;
-}
 .header__wrapper :nth-child(2) {
   order: 3;
 }
@@ -102,6 +99,7 @@ dd {
 .header__search-form {
   margin-top: 16px;
   width: 100%;
+  border: none;
 }
 @media (max-width: 767px) {
   .header__search-form:before {
@@ -125,7 +123,6 @@ dd {
 }
 
 .partners__title {
-  align-self: 28px;
   margin-top: 70px;
 }
 .partners__cards-container {
@@ -146,7 +143,9 @@ dd {
   }
 }
 .partners__card {
-  border: 1px solid #ebebf1;
+  min-width: 335px;
+  height: 140px;
+  border-width: 1px;
   border-radius: 5px;
 }
 @media (min-width: 768px) {
@@ -191,7 +190,6 @@ dd {
   text-decoration: none;
 }
 .profile__avatar {
-  margin-left: 10px;
   width: 40px;
   height: 40px;
 }
@@ -205,15 +203,18 @@ dd {
 }
 .search-form__input {
   width: 100%;
+  height: 24px;
   margin-top: 12px;
   padding-left: 0px;
   text-indent: 29px;
   font-size: 14px;
   font-weight: 400;
+  line-height: 16px;
   border: none;
 }
 @media (min-width: 768px) {
   .search-form__input {
+    height: auto;
     padding: 12px 10px 12px 10px;
     margin-top: 0px;
     border: 1px solid #ebebf1;
@@ -233,8 +234,8 @@ dd {
 
 .card {
   width: 100%;
-  min-width: 335px;
-  height: 140px;
+  border-style: solid;
+  border-color: #ebebf1;
   display: flex;
   align-items: center;
   justify-content: center;

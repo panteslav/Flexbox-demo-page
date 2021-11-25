@@ -17,9 +17,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
-        :nth-child(1) {
-            order: 1;
-        }
         :nth-child(2) {
             order: 3;
         }
@@ -62,6 +59,9 @@
     &__search-form {
         margin-top: 16px;
         width: 100%;
+
+        border: none;
+
         @media (max-width: calc(a.$tablet - 1px)) {
             //The line also forces search-form to wrap to next line
             &:before {
