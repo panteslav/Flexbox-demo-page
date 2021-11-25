@@ -89,11 +89,9 @@ dd {
     order: 2;
   }
 }
-.header__flex-el:last-child {
-  border-left: 1px solid #ebebf1;
-}
 @media (min-width: 768px) {
   .header__flex-el:last-child {
+    border-left: 1px solid #ebebf1;
     order: 3;
   }
 }
