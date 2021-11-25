@@ -27,6 +27,16 @@
             order: 2;
             flex-grow: 100;
         }
+        // По макетку непонятно, к какому блоку логически относится
+        &:after {
+            content: '';
+            display: block;
+            position: relative;
+            right: 167px;
+            height: 80px;
+            width: 1px;
+            background: a.$main-light;
+        }
     }
 
     &__wrapper {
@@ -54,5 +64,25 @@
     &__logo {
         max-width: 40px;
         max-height: 40px;
+    }
+
+    &__search-form {
+        margin-top: 16px;
+
+        @media (max-width: calc(a.$tablet - 1px)) {
+            //The line also forces search-form to wrap to next line
+            &:before {
+                content: '';
+                display: block;
+                position: relative;
+                left: -20px;
+                width: 100vw;
+                height: 1px;
+                background: #bbc4d6;
+            }
+        }
+    }
+
+    &__profile {
     }
 }

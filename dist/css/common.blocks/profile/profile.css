@@ -67,7 +67,6 @@ dd {
   display: flex;
   align-items: center;
   padding-left: 19px;
-  border-left: 1px solid #ebebf1;
 }
 .profile__avatar {
   margin-left: 10px;

@@ -7,20 +7,6 @@
     font-weight: a.$font-weight-regular;
     line-height: 16px;
 
-    margin-top: 16px;
-
-    @media (max-width: calc(a.$tablet - 1px)) {
-        //Upper line
-        &:before {
-            content: '';
-            display: block;
-            position: relative;
-            left: -20px;
-            width: 100vw;
-            height: 1px;
-            background: #bbc4d6;
-        }
-    }
     @media (min-width: a.$tablet) {
         margin-top: 0px;
         height: 40px;

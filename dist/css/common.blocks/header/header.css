@@ -67,6 +67,15 @@ dd {
     order: 2;
     flex-grow: 100;
   }
+  .header:after {
+    content: "";
+    display: block;
+    position: relative;
+    right: 167px;
+    height: 80px;
+    width: 1px;
+    background: #ebebf1;
+  }
 }
 .header__wrapper {
   padding: 20px 20px 0px 20px;
@@ -89,6 +98,20 @@ dd {
 .header__logo {
   max-width: 40px;
   max-height: 40px;
+}
+.header__search-form {
+  margin-top: 16px;
+}
+@media (max-width: 767px) {
+  .header__search-form:before {
+    content: "";
+    display: block;
+    position: relative;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background: #bbc4d6;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */
