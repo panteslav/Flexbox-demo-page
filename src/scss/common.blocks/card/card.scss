@@ -24,15 +24,6 @@
         justify-content: center;
     }
 
-    @media (min-width: a.$tablet) {
-        min-width: 230px;
-        max-width: 30%;
-        height: 120px;
-    }
-    @media (min-width: a.$desktop) {
-        max-width: 270px;
-    }
-
     &__logo {
         max-width: 60px;
         max-height: 60px;

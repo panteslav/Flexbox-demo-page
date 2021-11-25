@@ -250,18 +250,6 @@ dd {
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 768px) {
-  .card {
-    min-width: 230px;
-    max-width: 30%;
-    height: 120px;
-  }
-}
-@media (min-width: 1440px) {
-  .card {
-    max-width: 270px;
-  }
-}
 .card__logo {
   max-width: 60px;
   max-height: 60px;
